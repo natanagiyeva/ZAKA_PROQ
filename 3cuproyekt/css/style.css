@@ -1,0 +1,491 @@
+/* line 3, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 32, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+body {
+  line-height: 1;
+  background-color: #11071F;
+}
+
+/* line 36, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 39, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 42, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 47, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 54, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* line 60, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.header {
+  height: 100px;
+  width: 100%;
+  background: #1A0B2E;
+  box-shadow: 0px 6px 22px -3px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 100;
+}
+
+/* line 69, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 74, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.nav_img {
+  display: block;
+  align-self: center;
+}
+
+/* line 79, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.nav_menu {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 85, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.nav_link {
+  padding: 0 15px;
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  align-self: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  transition: 0.4s all;
+  z-index: 3;
+}
+
+/* line 98, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.nav_link::before {
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgba(163, 98, 255, 0.2);
+  position: absolute;
+  transition: 0.4s all;
+  z-index: -1;
+}
+
+/* line 111, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.nav_link:hover {
+  color: #a362ff;
+}
+
+/* line 113, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.nav_link:hover::before {
+  width: 100%;
+}
+
+/* line 120, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.profil {
+  padding-top: 120px;
+}
+
+/* line 122, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.profil_inner {
+  background: url("../img/profil.png") no-repeat;
+  height: 430px;
+  padding: 31px 0 0 322px;
+}
+
+/* line 129, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.profil_bir {
+  font-family: 'Preahvihear';
+  font-weight: 400;
+  font-size: 19px;
+  color: #fff;
+}
+
+/* line 135, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.profil_iki {
+  margin-top: 85px;
+  margin-left: 25px;
+  font-family: 'Preahvihear';
+  font-weight: 400;
+  font-size: 17px;
+  color: #fff;
+}
+
+/* line 143, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.profil_uc {
+  margin-left: 25px;
+  line-height: 20px;
+  font-family: 'Preahvihear';
+  font-weight: 400;
+  font-size: 11px;
+  color: #fff;
+}
+
+/* line 152, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.profil_title {
+  margin-left: 25px;
+  font-family: 'Preahvihear';
+  font-weight: 400;
+  font-size: 50px;
+  color: #fff;
+  line-height: 63px;
+  position: relative;
+}
+
+/* line 160, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.profil_title img {
+  position: absolute;
+  left: 140px;
+  bottom: 0;
+}
+
+/* line 166, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.profil span {
+  color: #7127BA;
+}
+
+/* line 172, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.about {
+  margin: 10px;
+}
+
+/* line 174, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.about_title {
+  font-family: 'Preahvihear';
+  font-weight: 400;
+  font-size: 50px;
+  color: #fff;
+}
+
+/* line 180, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.about_social {
+  font-family: 'Preahvihear';
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 38px;
+  color: #fff;
+  margin-top: 7px;
+}
+
+/* line 187, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.about_social a {
+  color: #1877F2;
+  text-decoration: none;
+  transition: 0.4s all;
+}
+
+/* line 191, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.about_social a:hover {
+  color: #fff;
+}
+
+/* line 197, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.about_text {
+  margin-top: 70px;
+  font-family: 'Preahvihear';
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  line-height: 40px;
+}
+
+/* line 208, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.work {
+  background: url("../img/gradient.png") center no-repeat;
+  height: 640px;
+}
+
+/* line 211, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.work_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* line 216, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.work_grid-item {
+  position: relative;
+  padding: 30px 30px 30px 195px;
+  height: 200px;
+  border-top: 4px solid #4F228D;
+  background: #2C1250;
+  box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+}
+
+/* line 226, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.work_title {
+  padding-top: 90px;
+  color: #fff;
+  height: 200px;
+  font-family: 'Preahvihear';
+  font-weight: 400;
+  font-size: 40px;
+}
+
+/* line 234, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.work_img {
+  position: absolute;
+  left: 65px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 243, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.work_subheader {
+  margin-bottom: 10px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+
+/* line 250, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.work_descr {
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 12px;
+  color: #FFFFFF;
+  line-height: 1.4;
+}
+
+/* line 257, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.work_btn {
+  margin-top: 30px;
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid #693B93;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  transition: 0.4s all;
+}
+
+/* line 267, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.work_btn:hover {
+  background-color: #693B93;
+}
+
+/* line 273, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.design {
+  margin-top: 125px;
+}
+
+/* line 275, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.design_text {
+  margin-bottom: 32px;
+  font-family: 'Preahvihear';
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+}
+
+/* line 284, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.design span {
+  color: #A362FF;
+}
+
+/* line 288, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.design_img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 294, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.project {
+  margin-top: 190px;
+}
+
+/* line 297, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.project_inner {
+  position: relative;
+  padding-top: 30px;
+  margin-bottom: 150px;
+}
+
+/* line 301, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.project_inner-right {
+  text-align: right;
+}
+
+/* line 305, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.project_h6 {
+  margin-bottom: 5px;
+  font-family: 'Poppins';
+  color: #9857D3;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* line 313, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.project_h4 {
+  margin-bottom: 30px;
+  font-family: 'Poppins';
+  color: #CCD6F6;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+/* line 321, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.project_text {
+  margin-bottom: 25px;
+  width: 670px;
+  padding: 30px;
+  font-family: 'Poppins';
+  color: #CCD6F6;
+  line-height: 27px;
+  font-weight: 500;
+  font-size: 18px;
+  background: #2C1250;
+  border-radius: 20px;
+}
+
+/* line 332, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.project_text-right {
+  margin: 0 0 30px auto;
+}
+
+/* line 336, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.project_icon {
+  margin-left: 17px;
+}
+
+/* line 338, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.project_icon-right {
+  margin-left: auto;
+  margin-right: 17px;
+}
+
+/* line 343, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.project_img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* line 348, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.project_img-right {
+  right: auto;
+  left: 0;
+}
+
+/* line 355, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.contact {
+  margin: 100px 0 200px 0;
+}
+
+/* line 357, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.contact_title {
+  margin-bottom: 75px;
+  font-family: 'Preahvihear';
+  color: #fff;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+/* line 364, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.contact_text {
+  margin-bottom: 20px;
+  font-family: 'Preahvihear';
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+/* line 372, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.contact_link {
+  font-family: 'Preahvihear';
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.4s all;
+}
+
+/* line 379, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.contact_link:hover {
+  color: #CCD6F6;
+}
+
+/* line 383, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.contact_icon {
+  margin-top: 30px;
+}
+
+/* line 387, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.contact_img {
+  margin-right: 15px;
+  transition: 0.4s all;
+  padding: 7px;
+}
+
+/* line 391, ../../../../../Users/faignaghiyev/Desktop/ZAKA_PROQ/3cuproyekt/scss/style.scss */
+.contact_img:hover {
+  transform: translateY(-5px);
+}
+
+/*# sourceMappingURL=style.css.map */
